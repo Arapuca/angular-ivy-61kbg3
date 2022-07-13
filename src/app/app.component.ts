@@ -1,4 +1,3 @@
-import { AngularJSUrlCodec } from '@angular/common/upgrade';
 import { Component, VERSION } from '@angular/core';
 import { bootstrap } from '@angular/platform-browser-dynamic';
 
@@ -8,12 +7,12 @@ import { bootstrap } from '@angular/platform-browser-dynamic';
   <div class="container">
   <div class="row">
     <div class="col-sm-12">
-      <h1>Hello World</h1>
+      <h1>App</h1>
     </div>	
   </div>
 </div>	`
 })
-export class HelloWorld  {
+export class App  {
 
 }
-bootstrap(HelloWorld);
+bootstrap(App);
