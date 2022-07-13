@@ -1,10 +1,19 @@
+import { AngularJSUrlCodec } from '@angular/common/upgrade';
 import { Component, VERSION } from '@angular/core';
+import { bootstrap } from '@angular/platform-browser-dynamic';
 
 @Component({
-  selector: 'my-app',
-  templateUrl: './app.component.html',
-  styleUrls: [ './app.component.css' ]
+  selector: 'app',
+  template: `
+  <div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <h1>Hello World</h1>
+    </div>	
+  </div>
+</div>	`
 })
-export class AppComponent  {
-  name = 'Angular ' + VERSION.major;
+export class HelloWorld  {
+
 }
+bootstrap(HelloWorld);
